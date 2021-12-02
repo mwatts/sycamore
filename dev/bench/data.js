@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1637602376422,
+  "lastUpdate": 1638409571022,
   "repoUrl": "https://github.com/mwatts/sycamore",
   "entries": {
     "Benchmark": [
@@ -11051,6 +11051,66 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 58449,
             "range": "± 113",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke Chu",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "36d4a2942080cf400f2901a1abba106bef77b518",
+          "message": "Fix contexts inside effects (#310)\n\n* Fix nested contexts\r\n\r\n* Add context test\r\n\r\n* Remove useless clippy attribute\r\n\r\n* Make sure create_effect recreates scopes in right hierarchy\r\n\r\n* Fix root create_effect\r\n\r\n* Refactor create_child_scope_in\r\n\r\nBREAKING CHANGE: changed some function signatures\r\n\r\n* Fix compile errors\r\n\r\n* Fix get old scope's parent so that new scope does not change scope hierarchy",
+          "timestamp": "2021-11-30T21:54:35-08:00",
+          "tree_id": "d6139a78634469a5146583dacb8a9f4e2d154cdf",
+          "url": "https://github.com/mwatts/sycamore/commit/36d4a2942080cf400f2901a1abba106bef77b518"
+        },
+        "date": 1638409570313,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 47704,
+            "range": "± 268",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 687612,
+            "range": "± 3514",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 32611,
+            "range": "± 141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 49098,
+            "range": "± 46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 2497,
+            "range": "± 12",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 99715,
+            "range": "± 119",
             "unit": "ns/iter"
           }
         ]

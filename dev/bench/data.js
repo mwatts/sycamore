@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1668878432565,
+  "lastUpdate": 1676555253944,
   "repoUrl": "https://github.com/mwatts/sycamore",
   "entries": {
     "Benchmark": [
@@ -11351,6 +11351,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 77158,
             "range": "± 4561",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "faichenshing@gmail.com",
+            "name": "Blaine Hansen",
+            "username": "blainehansen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0512e4a6e7e60b6f2611c6984585c90126b69018",
+          "message": "Fix view! macro codegen for value binding when using complex expression (#569)",
+          "timestamp": "2023-01-30T21:10:42Z",
+          "tree_id": "9d7aef7111fcfbe5c9370258b498279c8d159c1f",
+          "url": "https://github.com/mwatts/sycamore/commit/0512e4a6e7e60b6f2611c6984585c90126b69018"
+        },
+        "date": 1676555252718,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 37711,
+            "range": "± 2342",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 221623,
+            "range": "± 11779",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 55610,
+            "range": "± 3444",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 69055,
+            "range": "± 4033",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 173,
+            "range": "± 56",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1157,
+            "range": "± 89",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 69367,
+            "range": "± 6888",
             "unit": "ns/iter"
           }
         ]
